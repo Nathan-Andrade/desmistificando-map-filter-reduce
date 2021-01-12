@@ -12,8 +12,13 @@ const pets = [
   {
     name: 'glup',
     type: 'fish',
-    age: 5
+    age: 2
   }
 ]
 
+const newPets = pets.filter((pet) => {
+  return pet.age < 5
+})
+
 console.log(pets)
+console.log(newPets)
